@@ -1,3 +1,61 @@
+# .NET / Visual Studio / dotnet core
+bin/
+obj/
+Release/
+Debug/
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs / logs
+*.log
+*.tlog/
+*.tmp
+*.cache
+*.ilk
+*.pdb
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+.nuget/
+
+# Publish artifacts
+publish/
+*.Publish.xml
+
+# Test results
+TestResults/
+
+# Entity Framework
+Migrations/*.Designer.cs
+
+# User secrets / env
+secrets.json
 .env
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Misc / tooling
+*.dbmdl
+*.pidb
+.vscode/
+
+# (Kept from existing file)
 __pycache__/
 venv/

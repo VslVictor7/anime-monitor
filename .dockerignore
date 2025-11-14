@@ -1,3 +1,84 @@
+# Git
+.git
+.gitignore
+
+# IDEs / editors
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.iml
+
+# Build outputs
+bin/
+obj/
+publish/
+artifacts/
+*.Publish.xml
+
+# NuGet / packages
+packages/
+.nuget/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+packages.config
+
+# Test results, logs and temporary files
+TestResults/
+*.trx
+*.log
+*.tlog/
+*.tmp
+*.cache
+
+# Debug / symbol / native build artifacts
+*.pdb
+*.mdb
+*.ilk
+*.opendb
+
+# Secrets / local configuration
 .env
-__pycache__/
-venv/
+secrets.json
+appsettings*.Development.json
+appsettings.Local.json
+local.settings.json
+*.pfx
+*.pem
+*.key
+*.cer
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Language runtimes / virtualenvs (if repository contains other languages)
+env/
+ENV/
+pip-wheel-metadata/
+
+# Node (if present)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Databases / caches
+*.db
+*.db-shm
+*.db-wal
+
+# Misc / tooling
+*.cache
+*.pidb
+
+# Ensure Dockerfile and compose files are included even if a broader pattern would ignore them
+!Dockerfile
+!docker-compose*.yml
