@@ -118,11 +118,12 @@ public sealed class AnimeScraper
         var doc = await GetDocumentAsync(pageUrl, cancellationToken);
 
         var magnetAnchor = doc.DocumentNode.SelectSingleNode("//a[starts-with(@href,'magnet:?xt=urn:btih:')]");
-        var link = magnetAnchor?.GetAttributeValue("href", null);
+        var link = magnetAnchor?.GetAttributeValue("href", "");
 
-        if (link is null)
+        if (string.IsNullOrEmpty(link))
         {
             _logger.Warn("Magnet não encontrado na página.");
+            return null;
         }
 
         return link;

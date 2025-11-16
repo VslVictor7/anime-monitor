@@ -74,7 +74,7 @@ public sealed class EpisodeTracker
                 WriteIndented = false
             };
 
-            var json = JsonSerializer.Serialize(state, opts);
+            var json = JsonSerializer.Serialize(state, AnimeMonitorJsonContext.Default.EpisodeState);
 
             using (var fs = new FileStream(tmpFile, FileMode.Create, FileAccess.Write, FileShare.None))
             using (var writer = new StreamWriter(fs))
