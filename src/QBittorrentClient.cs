@@ -43,7 +43,6 @@ public sealed class QBittorrentClient
 
     public async Task AddMagnetAsync(string magnetLink, CancellationToken cancellationToken)
     {
-        Directory.CreateDirectory(_config.SavePath);
 
         var url = $"{_config.QbUrl}/api/v2/torrents/add";
 
